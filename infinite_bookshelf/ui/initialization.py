@@ -12,7 +12,8 @@ load_dotenv()
 
 
 def load_return_env(variables: List[str]) -> Dict[str, str]:
-    return {var: os.getenv(var, None) for var in variables}
+    # Replace environment variable loading with st.secrets
+    return {var: st.secrets.get(var, None) for var in variables}
 
 
 def ensure_states(state_dict: Dict[str, Any]) -> None:
