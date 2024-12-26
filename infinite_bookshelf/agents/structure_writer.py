@@ -22,7 +22,7 @@ def generate_book_structure(
         USER_PROMPT = f"Write a comprehensive structure, omiting introduction and conclusion sections (forward, author's note, summary), for a book. Only provide up to one level of depth for nested sections. Make clear titles and descriptions that have no overlap with other sections. It is very important that use the following subject and additional instructions to write the book. \n\n<subject>{prompt}</subject>\n\n<additional_instructions>{additional_instructions}</additional_instructions>"
 
     completion = groq_provider.chat.completions.create(
-        model="llama-3.2-90b-vision-preview",
+        model="llama-3.3-70b-specdec",  # Change this line
         messages=[
             {
                 "role": "system",

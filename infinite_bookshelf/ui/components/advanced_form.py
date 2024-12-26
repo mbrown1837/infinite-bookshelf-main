@@ -1,6 +1,11 @@
 import streamlit as st
 
-MODEL_LIST = ["llama-3.2-90b-vision-preview", "llama-3.2-11b-vision-preview", "llama-3.3-70b-specdec"]
+MODEL_LIST = [
+    "llama-3.3-70b-specdec",     # Place newest/default model first
+    "llama-3.3-70b-versatile",   
+    "llama-3.2-90b-vision-preview", 
+    "llama-3.2-11b-vision-preview"
+]
 
 
 def render_advanced_groq_form(on_submit, button_disabled=False, button_text="Generate"):

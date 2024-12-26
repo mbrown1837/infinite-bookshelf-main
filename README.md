@@ -121,6 +121,11 @@ python3 -m streamlit run main.py
 
 Infinite Bookshelf may generate inaccurate information or placeholder content. It should be used to generate books for entertainment purposes only.
 
+## Models Used
+- llama-3.3-70b-specdec (Default model)
+- llama-3.2-90b-vision-preview
+- llama-3.2-11b-vision-preview
+- llama-3.3-70b-versatile
 
 ## Contributing
 

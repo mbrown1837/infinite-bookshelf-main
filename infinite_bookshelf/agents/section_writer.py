@@ -9,7 +9,7 @@ def generate_section(
     prompt: str, additional_instructions: str, model: str, groq_provider
 ):
     stream = groq_provider.chat.completions.create(
-        model="llama-3.2-11b-vision-preview",
+        model="llama-3.3-70b-specdec",
         messages=[
             {
                 "role": "system",
